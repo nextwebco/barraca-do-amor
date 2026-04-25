@@ -384,3 +384,31 @@
 .documentos img:hover {
   transform: scale(1.03);
 }
+@media (max-width: 768px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .gallery figure {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 18px;
+  }
+
+  .gallery figcaption {
+    font-size: 16px;
+    line-height: 1.4;
+    word-break: normal;
+    overflow-wrap: normal;
+    text-align: center;
+  }
+}
